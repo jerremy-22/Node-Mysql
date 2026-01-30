@@ -14,10 +14,5 @@ export class User {
   @Column()
   password: string;
 
-  @Column({ default: () => new Date() })
-  createdAt: Date;
-
-  @Column({ nullable: true })
-  updatedAt?: Date;
 }
 
