@@ -43,7 +43,7 @@
     "skipLibCheck": true
   },
 
-  "include": ["*.ts", "app.js", "app.js"],
+  "include": ["*.ts", "app.js", "app.js", "src/users.ts"],
   "exclude": ["node_modules/**/*"]
 
 }
