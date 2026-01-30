@@ -62,8 +62,9 @@ db.connect((err) => {
 
 import express from 'express';
 import mongoose from 'mongoose';
-import userRoutes from './src/userRoutes';
+import userRoutes from './src/users.routes';
 import { MongoClient } = from 'mongodb';
+
 
 const app = express();
 const PORT = 3000;
