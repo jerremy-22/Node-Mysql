@@ -26,7 +26,7 @@ export class AuthService {
     const user = userRepository.create({
       name,
       email,
-      password: hashedPassword,
+      password: hashedPassword(password),
       createdAt: new Date(),
     });
 
@@ -52,7 +52,7 @@ export class AuthService {
       { id: user._id, email: user.email },
       process.env.JWT_SECRET as string,
       { expiresIn: "1h" }
-    );
+     );
 
     return { token, user };
   }
